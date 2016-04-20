@@ -123,10 +123,13 @@ call vundle#rc()
 
   set nowrap                      " Wrap long lines
   set autoindent                  " Indent at the same level of the previous line
-  set shiftwidth=4                " Use indents of 4 spaces
   set expandtab                   " Tabs are spaces, not tabs
-  set tabstop=2                   " An indentation every two columns
-  set softtabstop=2               " Let backspace delete indent
+  
+  " 1 tab == 4 spaces
+  set shiftwidth=4
+  set tabstop=4
+  set softtabstop=4               " Let backspace delete indent
+  
   "set matchpairs+=<:>             " Match, to be used with %
   set comments=sl:/*,mb:*,elx:*/  " auto format comment blocks
 
