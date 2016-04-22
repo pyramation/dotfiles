@@ -172,3 +172,44 @@ set tm=500
 
 " Nerdtree map
 map <C-n> :NERDTreeToggle<CR>
+
+" CtrlP
+
+" Set no max file limit
+let g:ctrlp_max_files = 0
+" Search from current directory instead of project root
+let g:ctrlp_working_path_mode = 0
+"
+" Ignore these directories
+set wildignore+=*/out/**
+set wildignore+=*/vendor/**
+"
+" Search in certain directories a large project (hardcoded for now)
+cnoremap %proj <c-r>=expand('/var/www/Brandcast')<cr>
+" ga = go api
+map <Leader>ga :CtrlP %proj/packages/<cr>
+" gf = go frontend
+map <Leader>gf :CtrlP %proj/modules/<cr>
+
+" Ignore these directories
+set wildignore+=*/node_modules/**
+set wildignore+=*/dist/**
+
+" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+if executable('ag')
+  " Use Ag over Grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  unlet g:ctrlp_user_command 
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  let g:ctrlp_custom_ignore = {'file': '\.css$', 'dir': '\.git$\|node_modules$'}
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
+
+
+
+
