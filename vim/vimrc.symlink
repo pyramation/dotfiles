@@ -15,7 +15,7 @@ call vundle#rc()
   " General
   Bundle 'altercation/vim-colors-solarized'
   Bundle 'spf13/vim-colors'
-  Bundle 'kien/ctrlp.vim'
+  Bundle 'ctrlpvim/ctrlp.vim'
   Bundle 'Raimondi/delimitMate'
   Bundle 'Lokaltog/powerline'
   Bundle 'flazz/vim-colorschemes'
@@ -170,4 +170,5 @@ set novisualbell
 set t_vb=
 set tm=500
 
-
+" Nerdtree map
+map <C-n> :NERDTreeToggle<CR>
