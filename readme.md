@@ -9,3 +9,13 @@ OSX:
 Linux:
 
     apt-get install silversearcher-ag
+
+## Installation
+
+#### vim
+
+    make
+
+#### bash
+
+    make profile
