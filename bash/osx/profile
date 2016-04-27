@@ -1,4 +1,4 @@
-export PATH=$PATH:/usr/local/share/npm/bin/:~/bin/
+export PATH=$PATH:~/bin/
 
 alias ls='ls -G'
 alias ll='ls -laG'
@@ -8,7 +8,6 @@ cat ~/.motd
 
 source ~/.nvm/nvm.sh
 source ~/.bash_prompt
-# Source Git Autocomplete Script
 source ~/.git-completion.sh
 
 nvm use default
