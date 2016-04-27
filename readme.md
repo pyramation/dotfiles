@@ -1,6 +1,7 @@
-originally from [this repo](https://github.com/jordangarcia/dotfilesv2) (thanks @jordangarcia!) because of the awesome vim configuration setup :)
 
 ## Deps
+
+Assumes nvm and node are installed. Won't necessarily break anything though.
 
 OSX:
 
@@ -19,3 +20,7 @@ Linux:
 #### bash
 
     make profile
+
+## cred
+
+vim configuration originally from [this repo](https://github.com/jordangarcia/dotfilesv2) (thanks @jordangarcia!)
