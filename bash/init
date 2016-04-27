@@ -2,18 +2,21 @@
 
 for x in `ls files`
 do
-	cp files/$x ~/.$x
+    rm -f ~/.$x
+    cp files/$x ~/.$x
 done
 
 platform=`uname`
 if [[ "$platform" == 'Darwin' ]]; then
     for x in `ls osx`
     do
+        rm -f ~/.$x
         cp osx/$x ~/.$x
     done
 else
     for x in `ls linux`
     do
+        rm -f ~/.$x
         cp linux/$x ~/.$x
     done
 fi

@@ -12,4 +12,4 @@ def:
 	vim +BundleInstall! +BundleClean +qall
 
 profile:
-	./bash/init
+	cd ./bash && ./bash/init && cd ../
