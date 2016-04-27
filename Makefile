@@ -10,3 +10,6 @@ def:
 	mkdir -p $(vim_bundle_dir)
 	git clone http://github.com/gmarik/vundle.git $(vundle)
 	vim +BundleInstall! +BundleClean +qall
+
+profile:
+	./bash/init

@@ -1,0 +1,27 @@
+[user]
+    name = Dan Lynch
+    email = pyramation@gmail.com
+
+[color]
+    diff = auto
+    grep = auto
+    status = auto
+    branch = auto
+
+[alias]
+    hist = log --graph --pretty=format:\"%Cgreen %t %Cblue %ar %Creset %s %Cred [%an]\"
+    co = checkout
+    st = status
+    m = merge --no-ff
+[core]
+    editor = vim
+
+[merge]
+    # Include summaries of merged commits in newly created merge commit messages
+    log = true
+
+[push]
+    default = current
+    
+[pull]
+    default = current

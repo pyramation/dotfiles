@@ -1,0 +1,14 @@
+export PATH=$PATH:/usr/local/share/npm/bin/:~/bin/
+
+alias ls='ls -G'
+alias ll='ls -laG'
+alias gls='git ls-tree -r HEAD .'
+
+cat ~/.motd
+
+source ~/.nvm/nvm.sh
+source ~/.bash_prompt
+# Source Git Autocomplete Script
+source ~/.git-completion.sh
+
+nvm use default

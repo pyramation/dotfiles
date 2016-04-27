@@ -1,0 +1,21 @@
+#!/bin/bash
+
+for x in `ls files`
+do
+	cp files/$x ~/.$x
+done
+
+platform=`uname`
+if [[ "$platform" == 'Darwin' ]]; then
+    for x in `ls osx`
+    do
+        cp osx/$x ~/.$x
+    done
+else
+    for x in `ls linux`
+    do
+        cp linux/$x ~/.$x
+    done
+fi
+
+echo now change your ~/.gitconfig to your github info!
