@@ -21,6 +21,11 @@ Linux:
 
     make profile
 
+## Other tips/software that I use
+
+Sublime
+Dash https://kapeli.com/dash
+
 ## cred
 
 vim configuration originally from [this repo](https://github.com/jordangarcia/dotfilesv2) (thanks @jordangarcia!)
